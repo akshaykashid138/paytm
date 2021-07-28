@@ -6,11 +6,11 @@
   "scripts": {
     
     "server":"nodemon server",
-    "build": "cd frontend && yarn run build",
-    "install-client": "cd frontend && yarn",
-    "heroku-postbuild": "yarn run install-client && yarn run build",
+    "build": "cd frontend && npm run build",
+    "install-client": "cd frontend && npm",
+    "heroku-postbuild": "npm run install-client && npm run build",
     "start": "node server.js",
-    "client": "cd frontend && yarn start"
+    "client": "cd frontend && npm start"
   },
   "keywords": [],
   "author": "",
