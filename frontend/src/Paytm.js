@@ -44,7 +44,7 @@ const Paytm = () => {
         }
 
         const getData=(data)=>{
-            return fetch('/api/payment',{
+            return fetch('http://localhost:5000/api/payment',{
                 method:'POST',
                 headers:{
                     Accept:'application/json',
