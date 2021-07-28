@@ -44,7 +44,7 @@ const Paytm = () => {
         }
 
         const getData=(data)=>{
-            return fetch('https://paytm-react.herokuapp.com/api/payment',{
+            return fetch('/api/payment',{
                 method:'POST',
                 headers:{
                     Accept:'application/json',
