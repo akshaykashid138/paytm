@@ -104,7 +104,7 @@ router.post('/payment',(req,res)=>{
     params["INDUSTRY_TYPE_ID"] = process.env.PAYTM_INDUSTRY_TYPE_ID;
     params["CUST_ID"] = process.env.PAYTM_CUST_ID;
     params["TXN_AMOUNT"] = totalAmount;
-    params["CALLBACK_URL"] = "http://localhost:5000/api/callback"; //
+    params["CALLBACK_URL"] = "/api/callback"; //
     params["EMAIL"] = email;
     params["MOBILE_NO"] = "7887709470";
     
