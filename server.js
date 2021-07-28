@@ -5,6 +5,8 @@ const app=express()
 const cors=require('cors')
 const bodyParser=require('body-parser')
 
+const PORT = process.env.PORT || 5000;
+
 const paymentRouter=require('./paymentRoute')
 
 const port=5000;
@@ -20,4 +22,4 @@ app.use('/api',paymentRouter)
 
 
 
-app.listen(port,()=> console.log(`app is running on ${port}`))
+app.listen(PORT,()=> console.log(`app is running on ${port}`))
